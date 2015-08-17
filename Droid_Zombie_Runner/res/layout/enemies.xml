@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+
+	    <Button
+	        android:id="@+id/bDefaults"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Reset to Default Settings" />
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+
+		    <Button
+	            android:id="@+id/imageView1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+				android:background="@drawable/enemy" />
+
+		    <TextView
+		        android:id="@+id/tvEnemy"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text=" Regular Zombie"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+	    
+	    </LinearLayout>
+	
+	    <Button
+	        android:id="@+id/bEnemy"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Enabled" />
+	
+	    <TextView
+	        android:id="@+id/tvEnemyLevel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Appears Every _ Levels" />
+
+	    <EditText
+	        android:id="@+id/etEnemyLevel"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="number" />
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+
+		    <Button
+	            android:id="@+id/imageView2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+				android:background="@drawable/lenemy" />
+
+		    <TextView
+		        android:id="@+id/tvLEnemy"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text=" Large Zombie"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+		    
+		    </LinearLayout>
+	
+	    <Button
+	        android:id="@+id/bLEnemy"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Enabled" />
+	
+	    <TextView
+	        android:id="@+id/tvLEnemyLevel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Appears Every _ Levels" />
+
+	    <EditText
+	        android:id="@+id/etLEnemyLevel"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="number" />
+	
+	    <TextView
+	        android:id="@+id/tvleTurn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Turning Speed: _" />
+
+	    <EditText
+	        android:id="@+id/etleTurn"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="number" />
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+
+		    <Button
+	            android:id="@+id/imageView3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+				android:background="@drawable/person" />
+
+		    <TextView
+		        android:id="@+id/tvPerson"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text=" Person / Door "
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+		    
+		    <Button
+	            android:id="@+id/imageView4"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+				android:background="@drawable/door" />
+		    
+		    </LinearLayout>
+	
+	    <Button
+	        android:id="@+id/bPerson"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Enabled" />
+	
+	    <TextView
+	        android:id="@+id/tvPersonLevel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Appears Every _ Levels" />
+
+	    <EditText
+	        android:id="@+id/etPersonLevel"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="number" />
+	
+	    <TextView
+	        android:id="@+id/tvpTurn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Turning Speed: _" />
+
+	    <EditText
+	        android:id="@+id/etpTurn"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="number" />
+
+	    <TextView
+	        android:id="@+id/tvpCoin"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Points per save: _" />
+
+	    <EditText
+	        android:id="@+id/etpCoin"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="number" >
+
+	        <requestFocus />
+	    </EditText>
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+
+		    <Button
+	            android:id="@+id/imageView5"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+				android:background="@drawable/fire" />
+
+		    <TextView
+		        android:id="@+id/tvFire"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text=" Fire"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+	    
+	    </LinearLayout>
+	
+	    <Button
+	        android:id="@+id/bFire"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Enabled" />
+	
+	    <TextView
+	        android:id="@+id/tvFireLevel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Appears Every _ Levels" />
+
+	    <EditText
+	        android:id="@+id/etFireLevel"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="number" />
+
+	    <TextView
+	        android:id="@+id/tvFireATime"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Active For _ Seconds" />
+
+	    <EditText
+	        android:id="@+id/etFireATime"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="number" />
+
+	</LinearLayout>
+	
+</ScrollView>

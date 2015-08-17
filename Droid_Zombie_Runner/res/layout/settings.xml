@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+
+	    <TextView
+	        android:id="@+id/tvSpeed"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Game Speed" />
+
+	    <EditText
+	        android:id="@+id/etSpeed"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="number" />
+	
+	    <TextView
+	        android:id="@+id/tvControls"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Game Controls Height" />
+
+	    <EditText
+	        android:id="@+id/etControls"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="number" />
+	
+	    <TextView
+	        android:id="@+id/tvJStickRad"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Joy Stick Radius" />
+
+	    <EditText
+	        android:id="@+id/etJStickRad"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="number" />
+
+	    <TextView
+	        android:id="@+id/tvWSize"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="World Size" />
+		
+	    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+
+		    <EditText
+		        android:id="@+id/etWSizeX"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:ems="10"
+		        android:inputType="number" />
+
+		    <TextView
+		        android:id="@+id/foo"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text=" X " />
+		    
+		    <EditText
+		        android:id="@+id/etWSizeY"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:ems="10"
+		        android:inputType="number" />
+	    
+	    </LinearLayout>
+
+	    <TextView
+	        android:id="@+id/tvMap"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Mini Map Scale" />
+
+	    <EditText
+	        android:id="@+id/etMap"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="number" />
+
+	    <TextView
+	        android:id="@+id/tvJStickCenter"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Joy Stick Center" />
+
+	    <EditText
+	        android:id="@+id/etJStickCenter"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="number" />
+		    
+	    <Button
+	        android:id="@+id/bDefaults"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Reset to Default Settings" />
+		    
+	    <Button
+	        android:id="@+id/bPowerUps"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Power Up Settings" />
+		    
+	    <Button
+	        android:id="@+id/bEnemies"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Enemy Settings" />
+
+	    <TextView
+	        android:id="@+id/tvDifficulty"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Difficulty" />
+		
+	    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+	        
+		    <Button
+		        android:id="@+id/bEasy"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Easy" />
+		    
+		    <Button
+		        android:id="@+id/bMedium"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Medium" />
+		    
+		    <Button
+		        android:id="@+id/bHard"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Hard" />
+	    
+	    </LinearLayout>
+
+	    <TextView
+	        android:id="@+id/tvScores"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="High scores: " />
+		    
+	    <Button
+	        android:id="@+id/bReScore"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Reset high scores to 0" />
+
+	</LinearLayout>
+	
+</ScrollView>

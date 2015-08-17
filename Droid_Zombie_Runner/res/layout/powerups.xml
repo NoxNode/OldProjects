@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+
+	    <Button
+	        android:id="@+id/bDefaults"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Reset to Default Settings" />
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+
+		    <Button
+	            android:id="@+id/imageView1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+				android:background="@drawable/life" />
+
+	        <TextView
+	            android:id="@+id/tvLife"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text=" Extra Life"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	        
+	    </LinearLayout>
+	
+	    <Button
+	        android:id="@+id/bLife"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Enabled" />
+	
+	    <TextView
+	        android:id="@+id/tvLifeLevel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Appears Every _ Levels" />
+
+	    <EditText
+	        android:id="@+id/etLifeLevel"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="number" />
+
+	    <TextView
+	        android:id="@+id/tvLifeTime"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Appears For _ Seconds" />
+
+	    <EditText
+	        android:id="@+id/etLifeTime"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="number" />
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+
+		    <Button
+	            android:id="@+id/imageView2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+				android:background="@drawable/star" />
+
+		    <TextView
+		        android:id="@+id/tvInvuln"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text=" Invulnerability"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+	    
+	    </LinearLayout>
+	
+	    <Button
+	        android:id="@+id/bInvuln"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Enabled" />
+	
+	    <TextView
+	        android:id="@+id/tvInvulnLevel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Appears Every _ Levels" />
+
+	    <EditText
+	        android:id="@+id/etInvulnLevel"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="number" />
+
+	    <TextView
+	        android:id="@+id/tvInvulnTime"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Appears For _ Seconds" />
+
+	    <EditText
+	        android:id="@+id/etInvulnTime"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="number" />
+
+	    <TextView
+	        android:id="@+id/tvInvulnATime"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Active For _ Seconds" />
+
+	    <EditText
+	        android:id="@+id/etInvulnATime"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="number" />
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+
+		    <Button
+	            android:id="@+id/imageView3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+				android:background="@drawable/ice" />
+
+		    <TextView
+		        android:id="@+id/tvIce"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text=" Ice"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+	    
+	    </LinearLayout>
+	
+	    <Button
+	        android:id="@+id/bIce"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Enabled" />
+	
+	    <TextView
+	        android:id="@+id/tvIceLevel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Appears Every _ Levels" />
+
+	    <EditText
+	        android:id="@+id/etIceLevel"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="number" />
+
+	    <TextView
+	        android:id="@+id/tvIceTime"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Appears For _ Seconds" />
+
+	    <EditText
+	        android:id="@+id/etIceTime"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="number" />
+
+	    <TextView
+	        android:id="@+id/tvIceATime"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Active For _ Seconds" />
+
+	    <EditText
+	        android:id="@+id/etIceATime"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="number" />
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+
+		    <Button
+	            android:id="@+id/imageView4"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+				android:background="@drawable/hwater" />
+
+		    <TextView
+		        android:id="@+id/tvhWater"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text=" Holy Water"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+	    
+	    </LinearLayout>
+	
+	    <Button
+	        android:id="@+id/bhWater"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Enabled" />
+	
+	    <TextView
+	        android:id="@+id/tvhWaterLevel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Appears Every _ Levels" />
+
+	    <EditText
+	        android:id="@+id/ethWaterLevel"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="number" />
+
+	    <TextView
+	        android:id="@+id/tvhWaterTime"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Appears For _ Seconds" />
+
+	    <EditText
+	        android:id="@+id/ethWaterTime"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="number" />
+
+	    <TextView
+	        android:id="@+id/tvhWaterSpeed"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Throwing Speed: _" />
+
+	    <EditText
+	        android:id="@+id/ethWaterSpeed"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="number" />
+
+	    <TextView
+	        android:id="@+id/tvhWaterRad"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Splash Radius: _" />
+
+	    <EditText
+	        android:id="@+id/ethWaterRad"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="number" />
+
+	</LinearLayout>
+	
+</ScrollView>
