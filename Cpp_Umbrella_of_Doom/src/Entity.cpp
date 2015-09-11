@@ -4,12 +4,12 @@
 Entity::Entity() :
 Node(),
 id(0),
-sprites(nullptr),
+sprites(0),
 nSprites(0),
 drawingSpriteIndex(0),
 x(0),
 y(0),
-entities(nullptr),
+entities(0),
 animationCounter(0)
 {}
 

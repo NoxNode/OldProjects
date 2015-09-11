@@ -16,19 +16,19 @@ void restart(LinkedList* entities, bool* hasWon, bool* gameOver, sf::RectangleSh
 	//init enemies
 	Entity* curEntity = (Entity*)(*entities).getRoot();
 	Entity* prevEntity = curEntity;
-	
+
 	bool deleted = false;
-	while (curEntity != nullptr) {
+	while (curEntity != 0) {
 		if (curEntity->getId() == DROPLET) {
 			if (prevEntity == curEntity) {
 				(*entities).setRoot(curEntity->getNext());
-				curEntity->setNext(nullptr);
+				curEntity->setNext(0);
 				delete curEntity;
 				deleted = true;
 			}
 			else {
 				prevEntity->setNext(curEntity->getNext());
-				curEntity->setNext(nullptr);
+				curEntity->setNext(0);
 				delete curEntity;
 				curEntity = prevEntity;
 			}
@@ -36,13 +36,13 @@ void restart(LinkedList* entities, bool* hasWon, bool* gameOver, sf::RectangleSh
 		if (curEntity->getId() == ENEMY) {
 			if (prevEntity == curEntity) {
 				(*entities).setRoot(curEntity->getNext());
-				curEntity->setNext(nullptr);
+				curEntity->setNext(0);
 				delete curEntity;
 				deleted = true;
 			}
 			else {
 				prevEntity->setNext(curEntity->getNext());
-				curEntity->setNext(nullptr);
+				curEntity->setNext(0);
 				delete curEntity;
 				curEntity = prevEntity;
 			}
@@ -50,13 +50,13 @@ void restart(LinkedList* entities, bool* hasWon, bool* gameOver, sf::RectangleSh
 		if (curEntity->getId() == BOSS) {
 			if (prevEntity == curEntity) {
 				(*entities).setRoot(curEntity->getNext());
-				curEntity->setNext(nullptr);
+				curEntity->setNext(0);
 				delete curEntity;
 				deleted = true;
 			}
 			else {
 				prevEntity->setNext(curEntity->getNext());
-				curEntity->setNext(nullptr);
+				curEntity->setNext(0);
 				delete curEntity;
 				curEntity = prevEntity;
 			}
@@ -114,7 +114,7 @@ void restart(LinkedList* entities, bool* hasWon, bool* gameOver, sf::RectangleSh
 
 int main() {
 	sf::RenderWindow window(sf::VideoMode(800, 600), "UMBRELLA OF DOOM!");
-	window.setFramerateLimit(60);
+	window.setVerticalSyncEnabled(true);
 	// TODO: maybe restrict fps to 60? people with monitors that have a higher refresh rate may run the game faster
 
 	sf::RectangleShape damageBar;
@@ -243,51 +243,51 @@ int main() {
 		window.pollEvent(e);
 		switch (e.type) {
 		case sf::Event::KeyPressed:
-			if (e.key.code == sf::Keyboard::Key::W) {
+			if (e.key.code == sf::Keyboard::W) {
 				w = true;
 			}
-			if (e.key.code == sf::Keyboard::Key::A) {
+			if (e.key.code == sf::Keyboard::A) {
 				a = true;
 			}
-			if (e.key.code == sf::Keyboard::Key::S) {
+			if (e.key.code == sf::Keyboard::S) {
 				s = true;
 			}
-			if (e.key.code == sf::Keyboard::Key::D) {
+			if (e.key.code == sf::Keyboard::D) {
 				d = true;
 			}
-			if (e.key.code == sf::Keyboard::Key::Num1) {
+			if (e.key.code == sf::Keyboard::Num1) {
 				difficulty = 1;
 			}
-			if (e.key.code == sf::Keyboard::Key::Num2) {
+			if (e.key.code == sf::Keyboard::Num2) {
 				difficulty = 2;
 			}
-			if (e.key.code == sf::Keyboard::Key::Num3) {
+			if (e.key.code == sf::Keyboard::Num3) {
 				difficulty = 3;
 			}
-			if (gameOver && e.key.code == sf::Keyboard::Key::R) {
+			if (gameOver && e.key.code == sf::Keyboard::R) {
 				restart(&entities, &hasWon, &gameOver, enemyHealthBar, nEnemies, &cameraX);
 			}
 			break;
 		case sf::Event::KeyReleased:
-			if (e.key.code == sf::Keyboard::Key::W) {
+			if (e.key.code == sf::Keyboard::W) {
 				w = false;
 			}
-			if (e.key.code == sf::Keyboard::Key::A) {
+			if (e.key.code == sf::Keyboard::A) {
 				a = false;
 			}
-			if (e.key.code == sf::Keyboard::Key::S) {
+			if (e.key.code == sf::Keyboard::S) {
 				s = false;
 			}
-			if (e.key.code == sf::Keyboard::Key::D) {
+			if (e.key.code == sf::Keyboard::D) {
 				d = false;
 			}
-			if (e.key.code == sf::Keyboard::Key::Num1) {
+			if (e.key.code == sf::Keyboard::Num1) {
 				difficulty = 1;
 			}
-			if (e.key.code == sf::Keyboard::Key::Num2) {
+			if (e.key.code == sf::Keyboard::Num2) {
 				difficulty = 2;
 			}
-			if (e.key.code == sf::Keyboard::Key::Num3) {
+			if (e.key.code == sf::Keyboard::Num3) {
 				difficulty = 3;
 			}
 			break;
@@ -296,20 +296,20 @@ int main() {
 			mouseY = e.mouseMove.y;
 			break;
 		case sf::Event::MouseButtonPressed:
-			if (!leftMouseButtonUsed && e.mouseButton.button == sf::Mouse::Button::Left) {
+			if (!leftMouseButtonUsed && e.mouseButton.button == sf::Mouse::Left) {
 				leftMouseButton = true;
 				leftMouseButtonUsed = true;
 			}
-			if (e.mouseButton.button == sf::Mouse::Button::Right) {
+			if (e.mouseButton.button == sf::Mouse::Right) {
 				rightMouseButton = true;
 			}
 			break;
 		case sf::Event::MouseButtonReleased:
-			if (e.mouseButton.button == sf::Mouse::Button::Left) {
+			if (e.mouseButton.button == sf::Mouse::Left) {
 				leftMouseButton = false;
 				leftMouseButtonUsed = false;
 			}
-			if (e.mouseButton.button == sf::Mouse::Button::Right) {
+			if (e.mouseButton.button == sf::Mouse::Right) {
 				rightMouseButton = false;
 			}
 			break;
@@ -326,22 +326,22 @@ int main() {
 			Entity* prevEntity = curEntity;
 
 			bool enemiesLeft = false;
-			
+
 			bool deleted = false;
-			while (curEntity != nullptr) {
+			while (curEntity != 0) {
 				if (curEntity->getId() == DROPLET) {
 					Droplet* droplet = (Droplet*)curEntity;
 					if (droplet->getHastHit() || droplet->getX() < 0 || droplet->getX() > worldWidth || droplet->getY() < 0 || droplet->getY() > worldHeight) {
 						//remove droplet cuz its out of bounds
 						if (prevEntity == curEntity) {
 							entities.setRoot(curEntity->getNext());
-							curEntity->setNext(nullptr);
+							curEntity->setNext(0);
 							delete curEntity;
 							deleted = true;
 						}
 						else {
 							prevEntity->setNext(curEntity->getNext());
-							curEntity->setNext(nullptr);
+							curEntity->setNext(0);
 							delete curEntity;
 							curEntity = prevEntity;
 						}
@@ -358,13 +358,13 @@ int main() {
 						//remove boss cuz its dead
 						if (prevEntity == curEntity) {
 							entities.setRoot(curEntity->getNext());
-							curEntity->setNext(nullptr);
+							curEntity->setNext(0);
 							delete curEntity;
 							deleted = true;
 						}
 						else {
 							prevEntity->setNext(curEntity->getNext());
-							curEntity->setNext(nullptr);
+							curEntity->setNext(0);
 							delete curEntity;
 							curEntity = prevEntity;
 						}
@@ -378,13 +378,13 @@ int main() {
 						//remove enemy cuz its dead
 						if (prevEntity == curEntity) {
 							entities.setRoot(curEntity->getNext());
-							curEntity->setNext(nullptr);
+							curEntity->setNext(0);
 							delete curEntity;
 							deleted = true;
 						}
 						else {
 							prevEntity->setNext(curEntity->getNext());
-							curEntity->setNext(nullptr);
+							curEntity->setNext(0);
 							delete curEntity;
 							curEntity = prevEntity;
 						}
@@ -441,7 +441,7 @@ int main() {
 		//enemy
 		Entity* curEntity = (Entity*)entities.getRoot();
 		int index = nEnemies;
-		while (curEntity != nullptr) {
+		while (curEntity != 0) {
 			if (curEntity->getId() == ENEMY) {
 				index--;
 				enemyDamageBar[index].setPosition(curEntity->getX() - cameraX, curEntity->getY() - 24);

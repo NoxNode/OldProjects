@@ -31,7 +31,7 @@ void Enemy::update(int* cameraX, int difficulty) {
 	LinkedList* entities = getEntities();
 	Entity* curEntity = (Entity*)entities->getRoot();
 	cooldown++;
-	while (curEntity != nullptr) {
+	while (curEntity != 0) {
 		if (curEntity->getId() == PLAYER) {
 			// look at player
 			float dx = getDrawingSprite()->getPosition().x - *cameraX - curEntity->getDrawingSprite()->getPosition().x + *cameraX;

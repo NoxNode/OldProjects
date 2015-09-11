@@ -22,7 +22,7 @@ Umbrella::Umbrella(LinkedList* entities) {
 void Umbrella::update() {
 	LinkedList* entities = getEntities();
 	Entity* curEntity = (Entity*)entities->getRoot();
-	while (curEntity != nullptr) {
+	while (curEntity != 0) {
 		if (curEntity->getId() == PLAYER) {
 			float playerX = curEntity->getX() - curEntity->getDrawingSprite()->getTexture()->getSize().x / 2;
 			float playerY = curEntity->getY() - curEntity->getDrawingSprite()->getTexture()->getSize().y / 2;

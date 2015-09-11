@@ -1,7 +1,7 @@
 #include "LinkedList.h"
 
 LinkedList::LinkedList() :
-root(nullptr)
+root(0)
 {}
 
 LinkedList::~LinkedList() {
@@ -23,7 +23,7 @@ void LinkedList::setRoot(Node* node) {
 
 void LinkedList::print() {
 	Node* curNode = root;
-	while (curNode != nullptr) {
+	while (curNode != 0) {
 		curNode->print();
 		curNode = curNode->getNext();
 	}

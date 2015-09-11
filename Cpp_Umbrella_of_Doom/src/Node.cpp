@@ -2,11 +2,11 @@
 #include <iostream>
 
 Node::Node() {
-	next = nullptr;
+	next = 0;
 }
 
 Node::~Node() {
-	if (next != nullptr)
+	if (next != 0)
 		delete next;
 }
 

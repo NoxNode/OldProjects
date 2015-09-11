@@ -34,7 +34,7 @@ void Droplet::update(int* cameraX, int mouseX, int mouseY, int difficulty) {
 	// go forward
 	move(velx, vely);
 
-	while (curEntity != nullptr) {
+	while (curEntity != 0) {
 		if (curEntity->getId() == PLAYER) {
 			float pdx = curEntity->getX() - this->getX();
 			float pdy = curEntity->getY() - this->getY();
