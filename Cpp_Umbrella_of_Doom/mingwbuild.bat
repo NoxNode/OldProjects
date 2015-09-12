@@ -1,5 +1,5 @@
 pushd src
-g++ -o../bin/main.exe -std=c++11 ^
+g++ -o../bin/Umbrella.exe -std=c++11 ^
  ^
 Boss.cpp ^
 Droplet.cpp ^
