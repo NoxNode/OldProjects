@@ -6,6 +6,7 @@
 #include <stdio.h>
 #include "Bitmap.h"
 #pragma comment( lib,"gdiplus.lib" )
+#pragma comment( lib,"D3D9.lib" )
 
 void D3DGraphics::Swap( int* x1,int* x2 )
 {
