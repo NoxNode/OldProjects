@@ -5,7 +5,7 @@ class Database {
 
 	public static $username = "a5879393_bmetest";
 
-	public static $password = "Prime123";
+	public static $password = "password";
 
 	public static $db_name = "a5879393_test";
 

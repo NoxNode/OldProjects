@@ -1,5 +1,5 @@
 <?php
-    include 'framework/database.php';
+    include 'framework/database1.php';
     include 'framework/queries.php';
     include 'framework/tracking.php';
     include 'framework/input.php';
