@@ -31,6 +31,7 @@ Called by:	play
 */
 char score(char player, char board[]);
 
+// entry point of program
 int main() {
 	char board[9];
 	playGame(board);
@@ -91,16 +92,17 @@ char play(char current_player, char board[]) {
 	int digit = 0;
 	cout << "Player " << current_player << ", please enter the number in the display (1 - 9) where you wish your mark to be entered." << endl;
 	cin >> digit;
-	digit--;
+	digit--; // subtract 1 to get from user inputted range (1 - 9) into index range (0 - 8)
 
 	while (!isValidSpot(digit, board)) { //make sure spot is valid
 		cout << "The spot you entered is either not in range, or is already taken. Please enter another number in the display (1 - 9) where you wish your mark to be entered" << endl;
 		cin >> digit;
+		digit--; // subtract 1 to get from user inputted range (1 - 9) into index range (0 - 8)
 	}
 	board[digit] = current_player; // set the place on the board to the character of the current player
 
-	//system("cls"); // clear screen
-	cout << string( 100, '\n' );
+	//system("cls"); // clear screen - Windows only
+	cout << string( 100, '\n' );  // clear screen-ish - platform independent
 	displayArray(board); // display board
 
 	return score(current_player, board);
