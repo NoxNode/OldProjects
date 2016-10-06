@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.socket.io/socket.io-1.2.1.js"></script>
+        <script src="./client.js"></script>
+    	<style>
+    		body {
+    			margin: 0;
+    			padding: 0;
+    			overflow: hidden;
+    			background-color: #fff;
+    		}
+    		canvas {
+    			position: fixed;
+    			background-color: #fff;
+    		}
+    	</style>
+    	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    	<meta name="description" content="NoxNode">
+    	<title>BoxedIn</title>
+    	<link rel="shortcut icon" href="images/NoxNode.png">
+	</head>
+	<body id="bodyElement" oncontextmenu="return false" onload="Main()">
+        <!-- Engine Code -->
+		<script type="text/javascript" src="js/lib/pixi.min.js"></script>
+		<script type="text/javascript" src="js/Renderer.js"></script>
+		<script type="text/javascript" src="js/Input.js"></script>
+		<script type="text/javascript" src="js/Game.js"></script>
+		<script type="text/javascript" src="js/Main.js"></script>
+
+        <!-- Game Specific Code -->
+		<script type="text/javascript" src="js/game/objects/Player.js"></script>
+		<script type="text/javascript" src="js/game/objects/Background.js"></script>
+		<script type="text/javascript" src="js/game/objects/Shuriken.js"></script>
+
+		<script type="text/javascript" src="js/game/updateFuncs/PlayerMove.js"></script>
+		<script type="text/javascript" src="js/game/updateFuncs/PlayerAttack.js"></script>
+		<script type="text/javascript" src="js/game/updateFuncs/NetPlayerMove.js"></script>
+		<script type="text/javascript" src="js/game/updateFuncs/NetPlayerAttack.js"></script>
+		<script type="text/javascript" src="js/game/updateFuncs/UpdateGraphicsPos.js"></script>
+	</body>
+</html>
